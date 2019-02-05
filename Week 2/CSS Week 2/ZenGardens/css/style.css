@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+    margin:0;
+}
+
+h1 {
+    font-size:50px;
+    font-weight:50;
+}
+
+h2 {
+    font-family: 'Satisfy', sans-serif;
+    font-weight: 50;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h3 {
+    color: black;
+    padding:5px 0;
+    padding-left: 100px;
+    margin:0;
+}
+
+[role="banner"] {
+    background: url(huntington.png), url(zen.svg);
+    background-position: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+    padding:40px;
+    text-align: center;
+    color: white;
+    text-shadow:black 10px;   
+}
+
+[role="article"] {
+    font-weight: 50;
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.participation, .benefits {
+    background-color: #C0D8CA;
+    color: white;
+    margin:0;
+}
+
+a {
+    color:black;
+}
+
+.resources {
+    size: 50px;
+}
+
+p {
+    margin: 0;
+    padding:5px;
+    padding-left: 100px;
+}
+
+[role="contentinfo"] a {
+    font-family: "satisfy", sans-serif;
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+}
+
+[role="contentinfo"] a:hover {
+    text-decoration: underline;
+}
+
+[role="contentinfo"] {
+    background-color: #C0D8CA;
+    margin-left: 0;
+}
+
+p[role="contentinfo"] {
+    margin-left: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    background-color: #134347;
+    padding:10px;
+}
+
+footer a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+.design-selection {
+    color:grey;
+    background-color: #E5EDE8;
+}
+
+.design-name {
+    text-decoration: none;
+}
+
+.design-archives {
+    background-color: #E5EDE8;
+    color:grey;
+}
+
+.design-archives ul a{
+    text-decoration: none;
+}
+
+[role="navigation"] ul{
+    background-color: #e5ede8;
+    text-align: center;
+    list-style: none;
+    margin:0;
+    padding:10px 0;
+    text-decoration: none;
+}
+
+[role="navigation"] li {
+    color:black;
+    float: left;
+    width: 50%;
+    background-color: #e5ede8; 
+    padding:15px 0;
+    border-bottom: 1px black solid;
+    text-decoration: none;
+}
+
+.resources {
+    background-color: #E5EDE8;
+    text-decoration: none;
+}
+
+.designer-name {
+    color:grey;
+    text-decoration: none;
+}
+
+.zen-resources {
+    color: grey;
+}
+
+.zen-resources ul {
+    background-color: #e5ede8;
+    float: left;
+    text-align: center;
+    width:100%;
+    padding:15px 0;
+    margin:0;
+    border-bottom: 1px black solid;
+}
+
+.zen-resources li {
+    width:50%;
+    float: left;
+    padding:15px 0;
+    border-bottom: 1px black solid;
+}
+
+.zen-resources li a{
+    color: grey;
+    text-decoration: none;
+}
+
+
+.requirements {
+    margin-left: 0;
+}
+
+.requirements p{
+    padding-left: 100px;
+}
+
+.requirements h3{
+    padding-left: 100px;
+}
+
