@@ -1,0 +1,57 @@
+/* this is reset.css, basically resets all the defaults styles.*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+
+/* target all elements */
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: green;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+}
+
+.player-1-section {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height: 50%;
+    width:33.33333%;
+    padding: 20px;
+    text-align: center;
+}
+
+.player-2-section {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height:50%;
+    width:33.33333%;
+    padding: 20px;
+}
+
+.img {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    height: 50%;
+    width:33.33333%;
+}
+
+.ext {
+    display: flex;
+    flex:1;
+}

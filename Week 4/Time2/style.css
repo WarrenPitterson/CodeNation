@@ -1,0 +1,19 @@
+*{ border:0px;
+    margin: 0%;
+}
+
+@font-face {
+    font-family:'Digital';
+    src: url('DS-DIGII.TTF');
+}
+
+body {
+    font-family: 'Digital', sans-serif;
+    font-size: 200px;
+    text-align: center;
+    top:50%;
+    background: url(Apple_Watch_Steel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:0%;
+}

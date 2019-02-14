@@ -1,0 +1,38 @@
+body {
+    background: lightblue;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img {
+    transform:Rotatey(-45deg);
+    transform:translateY(200px); 
+    transform:scale(3);
+}
+
+/* 
+X Axis is left and right
+Y axis is up and down 
+Z axis in forward and backwards 
+
+transform:scaleX(1);
+transform:scale(1,2); this is X and Y Respectively, whole numbers
+
+transform:translateX(100px); translarte is in pixels 
+
+transform:RotateX(90deg); rotates clockwise through the center.
+
+using a negative value will be anti-clockwise 
+Axis is relative to the object and not the screen
+Only 1 transform command can be applied at once
+transform: translateX rotate(90deg) scale(2)
+
+the order is important as the commands are relative. 
+
+*/
+

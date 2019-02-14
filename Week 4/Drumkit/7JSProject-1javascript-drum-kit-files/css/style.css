@@ -1,0 +1,49 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+  background-image: url(../images/drums.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+h1 {
+    color: white;
+    align-content: center;
+    justify-content: center;
+    margin-left: 40%;
+}
+
+kbd {
+    color:white;
+    font-size:30px;
+}
+
+.sound {
+    color:white;
+    font-size: 10px;
+}
+
+.keys {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* keys are the container, key is the buttons*/
+.key {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 7px;
+    margin: 0;
+    border-color:white;
+}
