@@ -8,14 +8,11 @@ class App extends Component {
     list: []
   }
 
-
-
-
   render() {
     return (
       <div className="App">
-        <List/>
         <Header/>
+        <List/>
       </div>
     );
   }
