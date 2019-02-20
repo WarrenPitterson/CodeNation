@@ -5,25 +5,74 @@
 
 body {
     background: linear-gradient(to left, #6494e6, #474e9b);
-    border:10px, grey;
-    padding:10px;
-    margin:10px;
+    color: white;
+    margin:0;
+    padding: 0;
 }
 
-.wrapper {
-    padding:5px 5px;
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0 0 10px 0;
 }
 
 img {
-    height:200px;
-    width:200px;
+    position: absolute;
+    height:30%;
+    border-radius: 50%;
+    transform:translate(-50%,-50%);
+    left: 50%;
+    top: 40%;
 }
 
 ul {
+    color: white;
     list-style-type: none;
     display:flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex:1;
-    flex-wrap: wrap;
+    
 }
 
+li {
+    background: transparent;
+    color: white;
+    justify-content: space-evenly;
+    border-radius: 10%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+li a{ 
+    color:white;
+    text-decoration: none;
+    font-weight: 800;
+
+}
+
+hr {
+    display: block;
+    background: transparent;
+    overflow: hidden;
+    border-style: ridge;
+    width: 30%;
+}
+
+.Profile-Pic {
+    height: 300px;   
+}
+
+.About-me {
+    height: 300px;
+    width: 100%;
+}
+
+.Skills {
+    height: 300px;
+}
+
+.Projects {
+    height: 300px;
+}

@@ -25,14 +25,14 @@ function add (score)  { //score = diceRoll result
         score1.textContent = score;
         total1.textContent = currentScore[0];
         p1Win ();
-        p1Loss ();
+        p1Loss();
     
     } else { 
         currentScore[1] += score;
         score2.textContent = score;
         total2.textContent = currentScore[1];
         p2Win ();
-        p2Loss ();
+        p2Loss();
     }
 }
 
@@ -46,8 +46,6 @@ function start () {
     score2.textContent = 0;
     message1.textContent = "CURRENT";
     message2.textContent = "CURRENT";
-
-
 }
 
 function switchPlayer () {
@@ -57,27 +55,58 @@ function switchPlayer () {
 function p1Win () { 
     if (currentScore[0] >= 20) {
         message1.textContent = "WINNER!";
+        setTimeout(() => {
+            currentScore[0] = 0;
+            score1.textContent = 0;
+            score2.textContent = 0;
+            total1.textContent = 0;
+            total2.textContent = 0;
+            message1.textContent = "CURRENT";    
+        }, 2000);
     }
 }
 
 function p2Win () { 
     if (currentScore[1] >= 20) {
         message2.textContent = "WINNER!";
+        setTimeout(() => {
+            currentScore[1] = 0;
+            score1.textContent = 0;
+            score2.textContent = 0;
+            total1.textContent = 0;
+            total2.textContent = 0;
+            message2.textContent = "CURRENT";    
+        }, 2000);
     }
 }
 
 function p1Loss () {
-    if (score1 == 1) {
+    if (score1.textContent == 1) {
         message1.textContent = "GAME OVER!"
+        setTimeout(() => {
+            currentScore[0] = 0;
+            score1.textContent = 0;
+            score2.textContent = 0;
+            total1.textContent = 0;
+            total2.textContent = 0;
+            message1.textContent = "CURRENT";    
+        }, 2000);
     }
 }
 
 function p2Loss () {
-    if (score2 === 1) {
+    if (score2.textContent == 1) {
         message2.textContent = "GAME OVER!"
+        setTimeout(() => {
+            currentScore[1] = 0;
+            score1.textContent = 0;
+            score2.textContent = 0;
+            total1.textContent = 0;
+            total2.textContent = 0;
+            message2.textContent = "CURRENT";    
+        }, 2000);
     }
 }
-
 
 roll.addEventListener('click', diceRoll);
 reset.addEventListener('click', start);

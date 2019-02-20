@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+background-color: blue;
+position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;    
+}
+
+img {
+    transform: scale(0.2) translateX(-200%) translateY(-200%);
+}

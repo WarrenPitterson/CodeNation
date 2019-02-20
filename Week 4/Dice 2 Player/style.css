@@ -27,7 +27,6 @@ body {
 .player-1-section {
     display: flex;
     flex-direction: column;
-    flex:1;
     height: 50%;
     width:33.33333%;
     padding: 20px;
@@ -37,7 +36,6 @@ body {
 .player-2-section {
     display: flex;
     flex-direction: column;
-    flex:1;
     height:50%;
     width:33.33333%;
     padding: 20px;
@@ -54,4 +52,9 @@ body {
 .ext {
     display: flex;
     flex:1;
+}
+
+.menu {
+    position:absolute;
+    left:35%;
 }
