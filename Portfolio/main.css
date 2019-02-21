@@ -12,10 +12,12 @@ body {
 
 h1 {
     text-align: center;
+    color:white;
 }
 
 h2 {
     margin: 0 0 10px 0;
+    color:white;
 }
 
 img {
@@ -54,7 +56,7 @@ li a{
 
 hr {
     display: block;
-    background: transparent;
+    background: white;
     overflow: hidden;
     border-style: ridge;
     width: 30%;
@@ -75,4 +77,8 @@ hr {
 
 .Projects {
     height: 300px;
+}
+
+p {
+    color: white;
 }
