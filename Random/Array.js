@@ -18,3 +18,5 @@ let people = {
 people.personB.pets.map((pets)=> {
     console.log(pets)
 });
+
+//example of an object(person A,B,C) with a internal array(pets)
