@@ -12,7 +12,7 @@ let newsFeed = [
     }
 ];
 
-let userNamePropt = prompt("whats your password?");
+let userNamePrompt = prompt("whats your username?");
 let passwordPrompt = prompt("whats your password?");
 
 function signIn(userName, password) {
@@ -23,3 +23,5 @@ function signIn(userName, password) {
             alert("Incorrect Password!");
         }
     }
+
+    signIn(userNamePrompt, passwordPrompt);
