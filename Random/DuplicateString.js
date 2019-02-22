@@ -5,6 +5,7 @@ function removeDuplicates(string) {
 }
 
 console.log(removeDuplicates('wwwwaaaaarrrreeeen'));
+removeDuplicates();
 
 
 //removes any duplicate characters from the string that has been passed through
