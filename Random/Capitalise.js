@@ -1,5 +1,5 @@
 function capitalFirst (string) { 
-    let capitalString = string.charAt(0).toUpperCase()
+    let capitalString = string.charAt(0).toUpperCase();
     return capitalString + string.substring(1);
 }
 
