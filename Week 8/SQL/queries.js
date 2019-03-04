@@ -30,8 +30,15 @@ class SQL {
         });
     }
 
-    update(column, table, newColumn) {
+    update(table, column, newColumn) {
         this.connection.query(`UPDATE ${table} SET ${column} = "${newColumn}" WHERE ${column} = 'Tanya'`, function (error, results) {
+            if (error) throw error;
+            console.log(results);
+        });
+    }
+
+    insert(table, Employee_ID, Name, DOB, Gender) {
+        this.connection.query(`INSERT INTO ${table} (Employee_ID, Name, date_of_birth, gender) VALUES ("${Employee_ID}", "${Name}", "${DOB}", "${Gender}")`, function (error, results) {
             if (error) throw error;
             console.log(results);
         });
