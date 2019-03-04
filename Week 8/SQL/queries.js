@@ -30,6 +30,13 @@ class SQL {
         });
     }
 
+    update(column, table, newColumn) {
+        this.connection.query(`UPDATE ${table} SET ${column} = "${newColumn}" WHERE ${column} = 'Tanya'`, function (error, results) {
+            if (error) throw error;
+            console.log(results);
+        });
+    }
+
     end() {
         this.connection.end()
          }
