@@ -10,20 +10,20 @@ class App extends React.Component {
   };
 
   AgeHandlerMinus = () => {
-    this.setState({ Age: this.Person[0].Age - 1 })
+    this.setState({ Age: this.state.Person[0] - 1 })
   };
 
   AgeHandlerPlus = () => {
-    this.setState({ Age: this.Person[0].Age + 1 })
+    this.setState({ Age: this.state.Person[0] + 1 })
   };
   
     
   render() {
     return (
       <div>
-      <h1>my name is {this.props.name} and my age is {this.props.age}</h1>
-      <button onClick = {this.AgeHandlerPlus}>+</button>
-      <button onClick = {this.AgeHandlerMinus}>-</button>
+      <h1>my name is {this.state.Person[0].name} and my age is {this.state.Person[0].Age}</h1>
+      <button onClick = {this.state.AgeHandlerPlus}>+</button>
+      <button onClick = {this.state.AgeHandlerMinus}>-</button>
       </div>
     )
   }
