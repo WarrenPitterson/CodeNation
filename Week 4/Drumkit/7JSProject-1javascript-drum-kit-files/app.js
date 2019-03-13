@@ -16,7 +16,6 @@ window.addEventListener('keydown', playSound);
 
 
 window.addEventListener('click', (e) => {
-    console.log(e.target);
     if(e.target.dataset.key) {
         const audio = document.querySelector(`audio[data-key="${e.target.dataset.key}"]`);
         const key = document.querySelector(`.key[data-key="${e.target.dataset.key}"]`);
