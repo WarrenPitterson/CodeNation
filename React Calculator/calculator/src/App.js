@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import Buttons from './Components/buttons';
+import Input from './Components/input';
+import Clear from './Components/clear';
 
 class App extends Component {
+  state = {
+    input: ''
+  }
   render() {
     return (
       <div className="App"> 
         <div className="calc-wrapper">
+        <Input input={this.state.input}></Input>
           <div className="row">
           <Buttons>7</Buttons>
           <Buttons>8</Buttons>
@@ -17,7 +23,7 @@ class App extends Component {
           <Buttons>4</Buttons>
           <Buttons>5</Buttons>
           <Buttons>6</Buttons>
-          <Buttons>X</Buttons>
+          <Buttons>x</Buttons>
           </div>
           <div className="row">
           <Buttons>1</Buttons>
@@ -30,6 +36,9 @@ class App extends Component {
           <Buttons>0</Buttons>
           <Buttons>=</Buttons>
           <Buttons>-</Buttons>
+          </div>
+          <div className ="row">
+            <Clear handleClear={() => this.setState({input:""})}>Clear</Clear>
           </div>
         </div>
       </div>

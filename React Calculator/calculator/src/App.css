@@ -1,14 +1,23 @@
 .app {
   display: flex;
+  background-color: beige;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%
+  
 }
 
 .calc-wrapper {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 400px;
-  height: 600px;
 }
 
 .row {
