@@ -45,7 +45,7 @@ HandleEqual = () => {
           <div className="row">
           <Buttons handleClick={this.InputAdd}>.</Buttons>
           <Buttons handleClick={this.InputAdd}>0</Buttons>
-          <Buttons handleClick={(this.HandleEqual)}>=</Buttons>
+          <Buttons handleClick={this.HandleEqual}>=</Buttons>
           <Buttons handleClick={this.InputAdd}>-</Buttons>
           </div>
           <div className ="row">
